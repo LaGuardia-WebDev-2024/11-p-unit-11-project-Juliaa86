@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
 [ Yes ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
+[ Yes ] Use Three Different jQuery Methods 
 [  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ Yes ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ Yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -29,44 +29,54 @@ Select ONE Additional
       <li>
         <h3 id="mem1">Memory #1</h3>
         <p class="Hey">More about this memory.</p>
+        <img class="Movie1" src="https://www.otterbein.edu/wp-content/uploads/2018/09/T2-theatredesigntech3.jpg">; 
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
         <p id="SM">More about this memory.</p>
+        <img class="Movie2" src="https://cpatheatricals.org/wp-content/uploads/2017/05/stage-manager.jpeg">;
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
         <p class="Dance">More about this memory</p>
+         <img class="Movie3" src="https://domf5oio6qrcr.cloudfront.net/medialibrary/8853/conversions/rhythmic-dancing-shiloette-iStock_000087684873_Medium-thumb.jpg">; 
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+$("html").css("backround-color","Blue");
 
+
+       $(".Movie1").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
         $("#mem1").text("Tech");
-      });
       $(".Hey").text ("Switching to PM tech has been a million times better than having those 3 periods in the morning.");
+     $(".Movie1").show(2000);
+     $(".Movie1").css("width","20px");
+       });
 
+      $(".Movie2").hide();
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
         $("#mem2").text("Stage Management");
-      });
       $("#SM").text("I love being apart of Stage Management during a show and geting to know the cast and crew. I have meet so many amazing people this year by working on West Side Story and Urinetown");
+$(".Movie2").show(2000);
+       });
 
+       $(".Movie3").hide();
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
         $("#mem3").text("Dance 🎉");
-      });
       $(".Dance").text("I Love to dance. Most of my favorite memories are from me dancing with my friends");
-
-
+      $(".Movie3").show(2000)
+     });
     </script>
   </body>
 </html>
