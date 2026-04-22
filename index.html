@@ -29,35 +29,32 @@ Select ONE Additional
       <li>
         <h3 id="mem1">Memory #1</h3>
         <p class="Hey">More about this memory.</p>
-        <img class="Movie1" src="https://www.otterbein.edu/wp-content/uploads/2018/09/T2-theatredesigntech3.jpg">; 
+        <img class="Movie1" src="https://www.otterbein.edu/wp-content/uploads/2018/09/T2-theatredesigntech3.jpg">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
         <p id="SM">More about this memory.</p>
-        <img class="Movie2" src="https://cpatheatricals.org/wp-content/uploads/2017/05/stage-manager.jpeg">;
+        <img class="Movie2" src="https://cpatheatricals.org/wp-content/uploads/2017/05/stage-manager.jpeg">
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
         <p class="Dance">More about this memory</p>
-         <img class="Movie3" src="https://domf5oio6qrcr.cloudfront.net/medialibrary/8853/conversions/rhythmic-dancing-shiloette-iStock_000087684873_Medium-thumb.jpg">; 
+         <img class="Movie3" src="https://domf5oio6qrcr.cloudfront.net/medialibrary/8853/conversions/rhythmic-dancing-shiloette-iStock_000087684873_Medium-thumb.jpg"> 
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-$("html").css("backround-color","Blue");
-
-
        $(".Movie1").hide();
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
         $("#mem1").text("Tech");
       $(".Hey").text ("Switching to PM tech has been a million times better than having those 3 periods in the morning.");
-     $(".Movie1").show(2000);
-     $(".Movie1").css("width","20px");
+     $(".Movie1").css('width', '300px').show(2000);
+     $("html").css("background-color","rgb(160, 223, 235)")
        });
 
       $(".Movie2").hide();
@@ -66,7 +63,8 @@ $("html").css("backround-color","Blue");
         $("#mem2").css("color", "blue");
         $("#mem2").text("Stage Management");
       $("#SM").text("I love being apart of Stage Management during a show and geting to know the cast and crew. I have meet so many amazing people this year by working on West Side Story and Urinetown");
-$(".Movie2").show(2000);
+      $(".Movie2").css('width','300px').show(2000);
+       $("html").css("background-color","rgb(250, 197, 198)")
        });
 
        $(".Movie3").hide();
@@ -76,6 +74,7 @@ $(".Movie2").show(2000);
         $("#mem3").text("Dance 🎉");
       $(".Dance").text("I Love to dance. Most of my favorite memories are from me dancing with my friends");
       $(".Movie3").show(2000)
+      $("html").css("background-color","rgb(247, 250, 197)")
      });
     </script>
   </body>
